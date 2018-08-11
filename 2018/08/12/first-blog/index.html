@@ -75,8 +75,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="pzqu 的自言自语" type="application/atom+xml" />
 
@@ -85,18 +83,18 @@
 
 
 
-<meta name="description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3.">
+<meta name="description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="rabbitmq集群的各种运维操作">
 <meta property="og:url" content="http://yoursite.com/2018/08/12/first-blog/index.html">
 <meta property="og:site_name" content="pzqu 的自言自语">
-<meta property="og:description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3.">
+<meta property="og:description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/first-blog/rabbitmq.jpg">
-<meta property="og:updated_time" content="2018-08-11T16:57:59.325Z">
+<meta property="og:updated_time" content="2018-08-11T18:41:53.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rabbitmq集群的各种运维操作">
-<meta name="twitter:description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3.">
+<meta name="twitter:description" content="一、rabbitmq集群必要条件 1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法 1.2. 配置域名映射到实体ip   二、启动停止 2.1 停止 2.2 启动   三、重建集群 3.1 使用2.1方法停止所有机器 3.2 移除rabbitmq配置记录与存储文件 3.3 按2.2方法启动所有机器 3.4 停止被加入集群节点app 3.5 建立集群 3">
 <meta name="twitter:image" content="http://yoursite.com/2018/08/12/first-blog/rabbitmq.jpg">
 
 
@@ -307,7 +305,8 @@
       
 
       
-        <!-- TOC -->
+        <a id="more"></a>
+<!-- TOC -->
 <ul>
 <li><a href="#一rabbitmq集群必要条件">一、rabbitmq集群必要条件</a><ul>
 <li><a href="#11-绑定实体ip即ifconfig所能查询到的绑定到网卡上的ip以下是绑定方法">1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法</a></li>
