@@ -5,12 +5,14 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 
 
 
@@ -74,6 +76,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="pzqu 的自言自语" type="application/atom+xml" />
+
 
 
 
@@ -85,7 +89,7 @@
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="pzqu 的自言自语">
 <meta property="og:description" content="日常分享记录的技术博客">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pzqu 的自言自语">
 <meta name="twitter:description" content="日常分享记录的技术博客">
@@ -104,7 +108,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -136,7 +140,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -185,7 +189,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -195,7 +199,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -218,6 +222,161 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pzqu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="pzqu 的自言自语">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/12/配置像我一样的hexo博客/" itemprop="url">配置像我一样的hexo博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T01:00:42+08:00">
+                2018-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>csdn和博客园虽然用的人多、技术氛围好，但是由于csdn的广告和灌水以及博客园的简陋页面让我决定搭建一套属于自己的博客，此处用到比较火的hexo搭建，而且免费就能获得自己的网站，如果不买域名的话完全够用了</p>
+<!-- TOC -->
+<ul>
+<li><a href="#一搭建本地-hexo">一、搭建本地 hexo</a><ul>
+<li><a href="#11-安装nodejs">1.1 安装nodejs</a></li>
+<li><a href="#12-安装git">1.2 安装git</a></li>
+<li><a href="#13-使用npm安装hexo">1.3 使用npm安装Hexo</a></li>
+<li><a href="#14-创建本地服务">1.4 创建本地服务</a></li>
+<li><a href="#15-主题配置">1.5 主题配置</a></li>
+</ul>
+</li>
+<li><a href="#二-配置你的github">二、 配置你的github</a><ul>
+<li><a href="#21-创建一个新项目">2.1 创建一个新项目</a></li>
+<li><a href="#22-填写正确的项目名称">2.2 填写正确的项目名称</a></li>
+<li><a href="#23-配置你的项目">2.3 配置你的项目</a></li>
+</ul>
+</li>
+<li><a href="#三激动人心的博客">三、激动人心的博客</a><ul>
+<li><a href="#31-修改hexo配置文件">3.1 修改hexo配置文件</a></li>
+<li><a href="#32-部署成功">3.2 部署成功</a></li>
+</ul>
+</li>
+<li><a href="#四个性化配置你的博客">四、个性化配置你的博客</a><ul>
+<li><a href="#41-配置博客名博客描述等信息">4.1 配置博客名，博客描述等信息</a></li>
+<li><a href="#42-其他">4.2 其他</a></li>
+</ul>
+</li>
+<li><a href="#五配置你的hexo可以插入图片">五、配置你的hexo可以插入图片</a></li>
+<li><a href="#附加速npm">附：加速npm</a></li>
+<li><a href="#引用">引用</a></li>
+</ul>
+<!-- /TOC -->
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/12/配置像我一样的hexo博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -261,9 +420,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-12T00:18:46+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T00:18:46+08:00">
                 2018-08-12
               </time>
             
@@ -303,7 +462,38 @@
       
         
           
-            <hr>
+            <!-- TOC -->
+<ul>
+<li><a href="#一rabbitmq集群必要条件">一、rabbitmq集群必要条件</a><ul>
+<li><a href="#11-绑定实体ip即ifconfig所能查询到的绑定到网卡上的ip以下是绑定方法">1.1. 绑定实体ip，即ifconfig所能查询到的绑定到网卡上的ip,以下是绑定方法</a></li>
+<li><a href="#12-配置域名映射到实体ip">1.2. 配置域名映射到实体ip</a></li>
+</ul>
+</li>
+<li><a href="#二启动停止">二、启动停止</a><ul>
+<li><a href="#21-停止">2.1 停止</a></li>
+<li><a href="#22-启动">2.2 启动</a></li>
+</ul>
+</li>
+<li><a href="#三重建集群">三、重建集群</a><ul>
+<li><a href="#31-使用21方法停止所有机器">3.1 使用2.1方法停止所有机器</a></li>
+<li><a href="#32-移除rabbitmq配置记录与存储文件">3.2 移除rabbitmq配置记录与存储文件</a></li>
+<li><a href="#33-按22方法启动所有机器">3.3 按2.2方法启动所有机器</a></li>
+<li><a href="#34-停止被加入集群节点app">3.4 停止被加入集群节点app</a></li>
+<li><a href="#35-建立集群">3.5 建立集群</a></li>
+<li><a href="#36-启动集群">3.6 启动集群</a></li>
+<li><a href="#37-检查集群状态">3.7 检查集群状态</a></li>
+<li><a href="#38-添加集群配置-见第四">3.8 添加集群配置 （见第四）</a></li>
+</ul>
+</li>
+<li><a href="#四-添加集群配置">四 添加集群配置</a><ul>
+<li><a href="#41-创建用户">4.1 创建用户</a></li>
+<li><a href="#42-打开15672网页管理端访问mq">4.2 打开15672网页管理端，访问mq</a></li>
+<li><a href="#43-在底部导入json后缀的配置文件即可">4.3 在底部导入.json后缀的配置文件即可</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<hr>
 <blockquote>
 <p>以下操作都以三节点集群为例，机器名标记为机器A、机器B、机器C，如果为双节点忽略机器C，如果为各多节点则与机器C操作相同</p>
 </blockquote>
@@ -411,9 +601,9 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-11T00:59:26+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-11T00:59:26+08:00">
                 2018-08-11
               </time>
             
@@ -543,8 +733,8 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -552,9 +742,25 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -594,7 +800,7 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -602,7 +808,7 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
