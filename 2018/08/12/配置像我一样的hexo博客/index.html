@@ -19,7 +19,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-loading-bar.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -104,7 +104,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812014827.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812020821.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812021131.png">
-<meta property="og:updated_time" content="2018-08-11T18:42:01.810Z">
+<meta property="og:updated_time" content="2018-08-11T18:57:08.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置像我一样的hexo博客">
 <meta name="twitter:description" content="csdn和博客园虽然用的人多、技术氛围好，但是由于csdn的广告和灌水以及博客园的简陋页面让我决定搭建一套属于自己的博客，此处用到比较火的hexo搭建，而且免费就能获得自己的网站，如果不买域名的话完全够用了">
@@ -342,6 +342,8 @@
 </li>
 <li><a href="#四个性化配置你的博客">四、个性化配置你的博客</a><ul>
 <li><a href="#41-配置博客名博客描述等信息">4.1 配置博客名，博客描述等信息</a></li>
+<li><a href="#42-添加头像">4.2 添加头像</a></li>
+<li><a href="#43-添加日志列表">4.3 添加日志列表</a></li>
 <li><a href="#42-其他">4.2 其他</a></li>
 </ul>
 </li>
@@ -368,7 +370,9 @@
 <h1 id="三、激动人心的博客"><a href="#三、激动人心的博客" class="headerlink" title="三、激动人心的博客"></a>三、激动人心的博客</h1><h2 id="3-1-修改hexo配置文件"><a href="#3-1-修改hexo配置文件" class="headerlink" title="3.1 修改hexo配置文件"></a>3.1 修改hexo配置文件</h2><p>修改根目录的配置文件<code>_config.yml</code>，以下部分如果没有需要手动创建，建议直接拷贝我的，repo为自己刚刚创建的那个项目的git链接（注意冒号与值之间必须有空格）<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/pzqu/pzqu.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="3-2-部署成功"><a href="#3-2-部署成功" class="headerlink" title="3.2 部署成功"></a>3.2 部署成功</h2><p>直接执行一套命令,再刷新刚刚的域名即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo d  //  部署的命令,会生成代码并推送到github上去</span><br></pre></td></tr></table></figure></p>
 <h1 id="四、个性化配置你的博客"><a href="#四、个性化配置你的博客" class="headerlink" title="四、个性化配置你的博客"></a>四、个性化配置你的博客</h1><h2 id="4-1-配置博客名，博客描述等信息"><a href="#4-1-配置博客名，博客描述等信息" class="headerlink" title="4.1 配置博客名，博客描述等信息"></a>4.1 配置博客名，博客描述等信息</h2><p>参考官方网站 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a></p>
-<h2 id="4-2-其他"><a href="#4-2-其他" class="headerlink" title="4.2 其他"></a>4.2 其他</h2><p>添加顶部加载条,添加代码位置<code>/themes/next/layout/_partials/head.swig</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//cdn.bootcss.com/pace/1.0.2/pace.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="4-2-添加头像"><a href="#4-2-添加头像" class="headerlink" title="4.2 添加头像"></a>4.2 添加头像</h2><h2 id="4-3-添加日志列表"><a href="#4-3-添加日志列表" class="headerlink" title="4.3 添加日志列表"></a>4.3 添加日志列表</h2><h2 id="4-2-其他"><a href="#4-2-其他" class="headerlink" title="4.2 其他"></a>4.2 其他</h2><p>添加顶部加载条,修改主题配置文件，pace_theme有好几款，自己选一款<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pace: <span class="literal">true</span></span><br><span class="line">pace_theme: pace-theme-flash</span><br></pre></td></tr></table></figure></p>
+<p>添加评论</p>
+<p>统计阅读量</p>
 <h1 id="五、配置你的hexo可以插入图片"><a href="#五、配置你的hexo可以插入图片" class="headerlink" title="五、配置你的hexo可以插入图片"></a>五、配置你的hexo可以插入图片</h1><ol>
 <li>把主页配置文件 _config.yml 里的post_asset_folder:这个选项设置为true</li>
 <li>在你的hexo目录下执行<code>npm install hexo-asset-image --save</code></li>
@@ -434,6 +438,32 @@
 
 
     <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
       
     </div>
   </div>
@@ -546,7 +576,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、搭建本地-hexo"><span class="nav-number">1.</span> <span class="nav-text">一、搭建本地 hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-安装nodejs"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 安装nodejs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-安装git"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 安装git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-使用npm安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 使用npm安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-创建本地服务"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 创建本地服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-主题配置"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 主题配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、-配置你的github"><span class="nav-number">2.</span> <span class="nav-text">二、 配置你的github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-创建一个新项目"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 创建一个新项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-填写正确的项目名称"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 填写正确的项目名称</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-配置你的项目"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 配置你的项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、激动人心的博客"><span class="nav-number">3.</span> <span class="nav-text">三、激动人心的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-修改hexo配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 修改hexo配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-部署成功"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 部署成功</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、个性化配置你的博客"><span class="nav-number">4.</span> <span class="nav-text">四、个性化配置你的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-配置博客名，博客描述等信息"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 配置博客名，博客描述等信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-其他"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、配置你的hexo可以插入图片"><span class="nav-number">5.</span> <span class="nav-text">五、配置你的hexo可以插入图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附：加速npm"><span class="nav-number">6.</span> <span class="nav-text">附：加速npm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">7.</span> <span class="nav-text">引用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、搭建本地-hexo"><span class="nav-number">1.</span> <span class="nav-text">一、搭建本地 hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-安装nodejs"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 安装nodejs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-安装git"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 安装git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-使用npm安装Hexo"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 使用npm安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-创建本地服务"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 创建本地服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-主题配置"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 主题配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、-配置你的github"><span class="nav-number">2.</span> <span class="nav-text">二、 配置你的github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-创建一个新项目"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 创建一个新项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-填写正确的项目名称"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 填写正确的项目名称</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-配置你的项目"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 配置你的项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、激动人心的博客"><span class="nav-number">3.</span> <span class="nav-text">三、激动人心的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-修改hexo配置文件"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 修改hexo配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-部署成功"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 部署成功</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、个性化配置你的博客"><span class="nav-number">4.</span> <span class="nav-text">四、个性化配置你的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-配置博客名，博客描述等信息"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 配置博客名，博客描述等信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-添加头像"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 添加头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-添加日志列表"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 添加日志列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-其他"><span class="nav-number">4.4.</span> <span class="nav-text">4.2 其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、配置你的hexo可以插入图片"><span class="nav-number">5.</span> <span class="nav-text">五、配置你的hexo可以插入图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附：加速npm"><span class="nav-number">6.</span> <span class="nav-text">附：加速npm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">7.</span> <span class="nav-text">引用</span></a></li></ol></div>
             
 
           </div>
