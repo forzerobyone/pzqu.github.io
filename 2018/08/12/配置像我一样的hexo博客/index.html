@@ -104,7 +104,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812014827.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812020821.png">
 <meta property="og:image" content="http://yoursite.com/2018/08/12/配置像我一样的hexo博客/20180812021131.png">
-<meta property="og:updated_time" content="2018-08-12T09:00:15.844Z">
+<meta property="og:updated_time" content="2018-08-12T09:10:52.841Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置像我一样的hexo博客">
 <meta name="twitter:description" content="csdn和博客园虽然用的人多、技术氛围好，但是由于csdn的广告和灌水以及博客园的简陋页面让我决定搭建一套属于自己的博客，此处用到比较火的hexo搭建，而且免费就能获得自己的网站，如果不买域名的话完全够用了">
@@ -373,7 +373,8 @@
 <h1 id="三、激动人心的博客"><a href="#三、激动人心的博客" class="headerlink" title="三、激动人心的博客"></a>三、激动人心的博客</h1><h2 id="3-1-修改hexo配置文件"><a href="#3-1-修改hexo配置文件" class="headerlink" title="3.1 修改hexo配置文件"></a>3.1 修改hexo配置文件</h2><p>修改根目录的配置文件<code>_config.yml</code>，以下部分如果没有需要手动创建，建议直接拷贝我的，repo为自己刚刚创建的那个项目的git链接（注意冒号与值之间必须有空格）<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/pzqu/pzqu.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p>
 <h2 id="3-2-部署成功"><a href="#3-2-部署成功" class="headerlink" title="3.2 部署成功"></a>3.2 部署成功</h2><p>直接执行一套命令,再刷新刚刚的域名即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo d  //  部署的命令,会生成代码并推送到github上去</span><br></pre></td></tr></table></figure></p>
 <h1 id="四、个性化配置你的博客"><a href="#四、个性化配置你的博客" class="headerlink" title="四、个性化配置你的博客"></a>四、个性化配置你的博客</h1><h2 id="4-1-配置博客名，博客描述等信息"><a href="#4-1-配置博客名，博客描述等信息" class="headerlink" title="4.1 配置博客名，博客描述等信息"></a>4.1 配置博客名，博客描述等信息</h2><p>参考官方网站 <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a></p>
-<h2 id="4-2-添加头像"><a href="#4-2-添加头像" class="headerlink" title="4.2 添加头像"></a>4.2 添加头像</h2><h2 id="4-3-添加日志列表"><a href="#4-3-添加日志列表" class="headerlink" title="4.3 添加日志列表"></a>4.3 添加日志列表</h2><h2 id="4-2-其他"><a href="#4-2-其他" class="headerlink" title="4.2 其他"></a>4.2 其他</h2><p>添加顶部加载条,修改主题配置文件，pace_theme有好几款，自己选一款<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pace: <span class="literal">true</span></span><br><span class="line">pace_theme: pace-theme-flash</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-2-添加头像"><a href="#4-2-添加头像" class="headerlink" title="4.2 添加头像"></a>4.2 添加头像</h2><p>在主题配置文件里修改<br><code>avatar: https://raw.githubusercontent.com/pzqu/pzqu.github.io/master/images/avatar.gif</code></p>
+<h2 id="4-3-添加日志列表"><a href="#4-3-添加日志列表" class="headerlink" title="4.3 添加日志列表"></a>4.3 添加日志列表</h2><h2 id="4-2-其他"><a href="#4-2-其他" class="headerlink" title="4.2 其他"></a>4.2 其他</h2><p>添加顶部加载条,修改主题配置文件，pace_theme有好几款，自己选一款<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pace: <span class="literal">true</span></span><br><span class="line">pace_theme: pace-theme-flash</span><br></pre></td></tr></table></figure></p>
 <p>文章阅读量<br>位置 <code>blog\themes\next\layout\_macro\post.swig</code>，在<code>&lt;/header&gt;</code>标签前加入以下代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id=<span class="string">"busuanzi_container_page_pv"</span>&gt;</span><br><span class="line">   本文总阅读量&lt;span id=<span class="string">"busuanzi_value_page_pv"</span>&gt;&lt;/span&gt;次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
 <p>删除底部强力驱动、统计站点网上自己查<br>添加分享<br>添加评论</p>
 <h1 id="五、配置你的hexo可以插入图片"><a href="#五、配置你的hexo可以插入图片" class="headerlink" title="五、配置你的hexo可以插入图片"></a>五、配置你的hexo可以插入图片</h1><ol>
@@ -394,6 +395,35 @@
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://raw.githubusercontent.com/pzqu/pzqu.github.io/master/images/wxpay.jpg" alt="pzqu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="https://raw.githubusercontent.com/pzqu/pzqu.github.io/master/images/alipay.jpg" alt="pzqu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
