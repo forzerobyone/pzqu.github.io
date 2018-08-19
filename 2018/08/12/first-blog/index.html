@@ -318,9 +318,6 @@
 
           
 
-        <span id="busuanzi_container_page_pv">
-          阅读量<span id="busuanzi_value_page_pv"></span>
-        </span>  
         </div>
       </header>
     
@@ -500,10 +497,10 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
             av: AV,
             el: '.comments',
             notify: 'true', 
-            verify: 'true',
+            verify: 'false',
             app_id: '',
             app_key: '',
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+            placeholder: ''  
         });
     </script>
     
@@ -808,11 +805,11 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
     });
     new Valine({
         el: '#comments' ,
-        verify: true,
+        verify: false,
         notify: true,
         appId: 'BF8XolSeE4J2HMABoYuxSD6n-gzGzoHsz',
         appKey: 'HwWdwfKzwtNO8R26twaobfvY',
-        placeholder: 'Just go go',
+        placeholder: '在些输入评论，支持markdown',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
