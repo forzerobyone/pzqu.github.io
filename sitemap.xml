@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.qupzhi.com/404/index.html</loc>
+    
+    <lastmod>2018-08-25T18:10:18.342Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.qupzhi.com/404.html</loc>
+    
+    <lastmod>2018-08-25T18:09:45.873Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.qupzhi.com/baidu_verify_jvgMEzaQb8.html</loc>
     
     <lastmod>2018-08-25T16:44:15.496Z</lastmod>
@@ -9,21 +23,7 @@
   </url>
   
   <url>
-    <loc>https://www.qupzhi.com/404.html</loc>
-    
-    <lastmod>2018-08-25T14:56:32.749Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.qupzhi.com/404/index.html</loc>
-    
-    <lastmod>2018-08-25T14:44:58.753Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.qupzhi.com/2018/08/12/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://www.qupzhi.com/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2018-08-23T17:45:13.505Z</lastmod>
     
@@ -79,21 +79,21 @@
   </url>
   
   <url>
-    <loc>https://www.qupzhi.com/2018/08/18/ansible%E5%88%9D%E6%8E%A2/</loc>
+    <loc>https://www.qupzhi.com/ansible%E5%88%9D%E6%8E%A2/</loc>
     
     <lastmod>2018-08-19T10:08:53.201Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.qupzhi.com/2018/08/12/first-blog/</loc>
+    <loc>https://www.qupzhi.com/first-blog/</loc>
     
     <lastmod>2018-08-11T18:46:00.663Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.qupzhi.com/2018/08/11/hello-world/</loc>
+    <loc>https://www.qupzhi.com/hello-world/</loc>
     
     <lastmod>2018-08-10T16:59:26.133Z</lastmod>
     
