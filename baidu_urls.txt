@@ -1,0 +1,4 @@
+https://www.qupzhi.com/2018/08/18/ansible初探/
+https://www.qupzhi.com/2018/08/12/配置像我一样的hexo博客/
+https://www.qupzhi.com/2018/08/12/first-blog/
+https://www.qupzhi.com/2018/08/11/hello-world/
