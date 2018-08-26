@@ -5,9 +5,9 @@
   <subtitle>来自程序员小熊的技术分享</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.qupzhi.com/"/>
+  <link href="http://www.qupzhi.com/"/>
   <updated>2018-08-19T10:08:53.201Z</updated>
-  <id>https://www.qupzhi.com/</id>
+  <id>http://www.qupzhi.com/</id>
   
   <author>
     <name>pzqu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>进入自动化部署的大门-ansible</title>
-    <link href="https://www.qupzhi.com/ansible%E5%88%9D%E6%8E%A2/"/>
-    <id>https://www.qupzhi.com/ansible初探/</id>
+    <link href="http://www.qupzhi.com/ansible%E5%88%9D%E6%8E%A2/"/>
+    <id>http://www.qupzhi.com/ansible初探/</id>
     <published>2018-08-18T05:59:11.000Z</published>
     <updated>2018-08-19T10:08:53.201Z</updated>
     
@@ -36,8 +36,8 @@
   
   <entry>
     <title>配置像我一样的hexo博客</title>
-    <link href="https://www.qupzhi.com/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://www.qupzhi.com/配置像我一样的hexo博客/</id>
+    <link href="http://www.qupzhi.com/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://www.qupzhi.com/配置像我一样的hexo博客/</id>
     <published>2018-08-11T17:00:42.000Z</published>
     <updated>2018-08-23T17:45:13.505Z</updated>
     
@@ -49,17 +49,17 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://www.qupzhi.com/categories/hexo/"/>
+      <category term="hexo" scheme="http://www.qupzhi.com/categories/hexo/"/>
     
     
-      <category term="教程" scheme="https://www.qupzhi.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="http://www.qupzhi.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>rabbitmq集群的各种运维操作</title>
-    <link href="https://www.qupzhi.com/first-blog/"/>
-    <id>https://www.qupzhi.com/first-blog/</id>
+    <link href="http://www.qupzhi.com/first-blog/"/>
+    <id>http://www.qupzhi.com/first-blog/</id>
     <published>2018-08-11T16:18:46.000Z</published>
     <updated>2018-08-11T18:46:00.663Z</updated>
     
@@ -76,8 +76,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://www.qupzhi.com/hello-world/"/>
-    <id>https://www.qupzhi.com/hello-world/</id>
+    <link href="http://www.qupzhi.com/hello-world/"/>
+    <id>http://www.qupzhi.com/hello-world/</id>
     <published>2018-08-10T16:59:26.132Z</published>
     <updated>2018-08-10T16:59:26.133Z</updated>
     

@@ -1,4 +1,4 @@
-https://www.qupzhi.com/ansible初探/
-https://www.qupzhi.com/配置像我一样的hexo博客/
-https://www.qupzhi.com/first-blog/
-https://www.qupzhi.com/hello-world/
+http://www.qupzhi.com/ansible初探/
+http://www.qupzhi.com/配置像我一样的hexo博客/
+http://www.qupzhi.com/first-blog/
+http://www.qupzhi.com/hello-world/
