@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="自动化,部署,工具," />
 
 
 
@@ -89,6 +89,7 @@
 
 
 <meta name="description" content="ansible是运维与实施人员的福音，其优雅的结构，丰富的模块库，简单的编程方式都让其成为自动化部署的不二语言。现在就让我们了解ansible,并使用ansible来做一些简单的任务">
+<meta name="keywords" content="自动化,部署,工具">
 <meta property="og:type" content="article">
 <meta property="og:title" content="进入自动化部署的大门-ansible">
 <meta property="og:url" content="http://www.qupzhi.com/ansible初探/index.html">
@@ -97,7 +98,8 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.qupzhi.com/ansible初探/20180819164218.png">
 <meta property="og:image" content="http://www.qupzhi.com/ansible初探/20180819164958.png">
-<meta property="og:updated_time" content="2018-08-19T10:08:53.201Z">
+<meta property="og:image" content="http://www.qupzhi.com/ansible初探/20180827230444.png">
+<meta property="og:updated_time" content="2018-08-27T15:49:26.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="进入自动化部署的大门-ansible">
 <meta name="twitter:description" content="ansible是运维与实施人员的福音，其优雅的结构，丰富的模块库，简单的编程方式都让其成为自动化部署的不二语言。现在就让我们了解ansible,并使用ansible来做一些简单的任务">
@@ -344,6 +346,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ansible/" itemprop="url" rel="index">
+                    <span itemprop="name">ansible</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -386,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,085 字
+                  1,501 字
                 </span>
               
 
@@ -402,7 +426,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -440,6 +464,8 @@
 <li><a href="#22-执行命令">2.2 执行命令</a></li>
 </ul>
 </li>
+<li><a href="#23-讨论执行命令的四个模块有什么区别">2.3 讨论执行命令的四个模块有什么区别</a></li>
+<li><a href="#三-完成复杂的ansible操作">三、 完成复杂的ansible操作</a></li>
 <li><a href="#引用">引用</a></li>
 <li><a href="#资源">资源</a></li>
 </ul>
@@ -521,7 +547,37 @@
 <li>备注2：<code>[test:vars]</code> 标签下为<code>test</code>分组的变量，<code>ansible_ssh_user</code>和<code>ansible_ssh_pass</code>是ansible的内置变量，意思为该分组下所有主机的用户和和密码，当前了也可以单独指定某台主机只需要将这两个参数追加到ip的旁边就好。这里三台主机都是同一个用户名和密码，所以像这样配置。</li>
 <li>备注3：默认路径是在<code>/etc/ansible/hosts</code>,如果你不喜欢是可以修改的(修改配置文件<code>/etc/ansible/ansible.cfg</code>的<code>inventory=/etc/ansible/hosts</code>即可)<h2 id="2-2-执行命令"><a href="#2-2-执行命令" class="headerlink" title="2.2 执行命令"></a>2.2 执行命令</h2></li>
 </ul>
-<p>未完待续</p>
+<p>执行命令，输出<code>test</code>分组下的所有主机的主机名，<code>-i</code>指定主机或分组,<code>-m</code>指定使用的模块，<code>-a</code>指定传给模块的参数，这里<code>command</code>模块就是执行linux命令的模块缺省时默认使用该模块，相同作用的还有<code>shell</code>模块、<code>raw</code>模块、<code>script</code>模块（使用场景与部分细节上不同，后面探讨）<br><img src="/ansible初探/20180827230444.png" alt="20180827230444.png"></p>
+<h1 id="2-3-讨论执行命令的四个模块有什么区别"><a href="#2-3-讨论执行命令的四个模块有什么区别" class="headerlink" title="2.3 讨论执行命令的四个模块有什么区别"></a>2.3 讨论执行命令的四个模块有什么区别</h1><p>每次在使用的时候都会有一些迷惑，为什么非要弄四个执行命令的模块出来，一开始决定没有必要，但是到后来才明白存在既合理，这里和大家探讨一下</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>command模块</code></td>
+<td>是为了安全的执行linux命令，所以不支持`”&lt;”, “&gt;”, “</td>
+<td>“, 和 “&amp;”`等符号（没有shell注入风险），如果要一定要使用这些，则使用shell模块</td>
+</tr>
+<tr>
+<td><code>shell模块</code></td>
+<td>通过<code>/bin/sh</code>来执行，其他都和command一样</td>
+</tr>
+<tr>
+<td><code>raw模块</code></td>
+<td>用来执行低版本的linux命令，可以不需要python来执行命令，甚至支持windows命令，带来的问题是很多很特性是不能用的</td>
+</tr>
+<tr>
+<td>script模块</td>
+<td>其原理是先将脚本，复制到远程主机，再在远程主机上执行，所以要指定脚本路径以及操作方法</td>
+</tr>
+</tbody>
+</table>
+<p>结论：要安全用command，要方便用shell，要操作写好的shell脚本或者其他脚本就用script、要是以上操作都跑不了的机器就用raw</p>
+<h1 id="三、-完成复杂的ansible操作"><a href="#三、-完成复杂的ansible操作" class="headerlink" title="三、 完成复杂的ansible操作"></a>三、 完成复杂的ansible操作</h1><p>未完待续–</p>
 <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>Ansible插件扩展 <a href="https://blog.csdn.net/yongchaocsdn/article/details/79271870" target="_blank" rel="noopener">https://blog.csdn.net/yongchaocsdn/article/details/79271870</a></p>
 <h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><p>插件 <a href="https://github.com/ansible/ansible/tree/stable-2.4/lib/ansible/plugins" target="_blank" rel="noopener">https://github.com/ansible/ansible/tree/stable-2.4/lib/ansible/plugins</a></p>
 
@@ -567,6 +623,16 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/自动化/" rel="tag"># 自动化</a>
+          
+            <a href="/tags/部署/" rel="tag"># 部署</a>
+          
+            <a href="/tags/工具/" rel="tag"># 工具</a>
+          
+        </div>
       
 
       
@@ -678,7 +744,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -689,7 +755,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -700,7 +766,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -740,7 +806,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基本概念"><span class="nav-number">1.</span> <span class="nav-text">一、基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-如何安装及安装要求"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 如何安装及安装要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-专有名词解释"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 专有名词解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-原理图"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 原理图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-连接机制"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 连接机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-常用文件及配置位置"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 常用文件及配置位置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、简单的例子"><span class="nav-number">2.</span> <span class="nav-text">二、简单的例子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-配置被管控机器的连接信息"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 配置被管控机器的连接信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-执行命令"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 执行命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资源"><span class="nav-number">4.</span> <span class="nav-text">资源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基本概念"><span class="nav-number">1.</span> <span class="nav-text">一、基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-如何安装及安装要求"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 如何安装及安装要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-专有名词解释"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 专有名词解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-原理图"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 原理图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-连接机制"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 连接机制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-常用文件及配置位置"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 常用文件及配置位置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、简单的例子"><span class="nav-number">2.</span> <span class="nav-text">二、简单的例子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-配置被管控机器的连接信息"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 配置被管控机器的连接信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-执行命令"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 执行命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-3-讨论执行命令的四个模块有什么区别"><span class="nav-number">3.</span> <span class="nav-text">2.3 讨论执行命令的四个模块有什么区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、-完成复杂的ansible操作"><span class="nav-number">4.</span> <span class="nav-text">三、 完成复杂的ansible操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#引用"><span class="nav-number">5.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资源"><span class="nav-number">6.</span> <span class="nav-text">资源</span></a></li></ol></div>
             
 
           </div>
@@ -776,7 +842,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">3.8k</span>
+    <span title="Site words total count">4.1k</span>
   
 
 
