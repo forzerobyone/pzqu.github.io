@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/first-blog/</loc>
+    
+    <lastmod>2018-09-03T03:29:33.880Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/commonweal/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.308Z</lastmod>
@@ -30,14 +37,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/archives/index.html</loc>
+    <loc>http://www.qupzhi.com/about/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/about/index.html</loc>
+    <loc>http://www.qupzhi.com/archives/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
@@ -54,13 +61,6 @@
     <loc>http://www.qupzhi.com/sitemap/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/first-blog/</loc>
-    
-    <lastmod>2018-09-02T07:07:13.301Z</lastmod>
     
   </url>
   
