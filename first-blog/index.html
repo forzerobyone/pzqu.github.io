@@ -97,7 +97,7 @@
 <meta property="og:description" content="在rabbitmq集群操作或者搭建的时候，常常会因为对于集群的不熟练而导致各种异常错误，常见的有绑定了浮动ip没有绑定实体ip导致，页面上操作mq完全没有问题，但是一到程序操作就出现问题，我们一起来学习下，rabbitmq集群的正确操作">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.qupzhi.com/first-blog/rabbitmq.jpg">
-<meta property="og:updated_time" content="2018-09-03T03:29:33.880Z">
+<meta property="og:updated_time" content="2018-09-03T04:51:33.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rabbitmq集群的各种运维操作">
 <meta name="twitter:description" content="在rabbitmq集群操作或者搭建的时候，常常会因为对于集群的不熟练而导致各种异常错误，常见的有绑定了浮动ip没有绑定实体ip导致，页面上操作mq完全没有问题，但是一到程序操作就出现问题，我们一起来学习下，rabbitmq集群的正确操作">
@@ -408,7 +408,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,218 字
+                  1,256 字
                 </span>
               
 
@@ -506,7 +506,7 @@
 用户只能访问与之绑定的vhost。
 
 vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmqctl工具来创建。 
-</code></pre><h2 id="4-2-打开15672网页管理端，访问mq"><a href="#4-2-打开15672网页管理端，访问mq" class="headerlink" title="4.2 打开15672网页管理端，访问mq"></a>4.2 打开15672网页管理端，访问mq</h2><p><code>/usr/sbin/rabbitmq-plugins enable rabbitmq_management</code></p>
+</code></pre><h2 id="4-2-打开15672网页管理端，访问mq"><a href="#4-2-打开15672网页管理端，访问mq" class="headerlink" title="4.2 打开15672网页管理端，访问mq"></a>4.2 打开15672网页管理端，访问mq</h2><p><code>/usr/sbin/rabbitmq-plugins enable rabbitmq_management</code><br>备注：如果发现命令执行完毕没有打开此服务，15672端口没有监听，则是由于没有重启mq导致的</p>
 <h2 id="4-3-在底部导入-json后缀的配置文件即可"><a href="#4-3-在底部导入-json后缀的配置文件即可" class="headerlink" title="4.3 在底部导入.json后缀的配置文件即可"></a>4.3 在底部导入.json后缀的配置文件即可</h2><p><img src="/first-blog/rabbitmq.jpg" alt="rabbitmq更新配置"></p>
 <p>如果覆盖了用户需要使用以下命令修改mq用户密码<br><code>/usr/sbin/rabbitmqctl change_password 用户名 密码</code></p>
 
@@ -671,7 +671,7 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -769,7 +769,7 @@ vhost是AMQP中唯一无法通过协议来创建的基元。只能通过rabbitmq
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.2k</span>
+    <span title="Site words total count">5.1k</span>
   
 
 

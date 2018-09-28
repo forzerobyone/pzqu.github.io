@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/ansible-roles/</loc>
+    
+    <lastmod>2018-09-28T02:57:40.839Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/first-blog/</loc>
     
-    <lastmod>2018-09-03T03:29:33.880Z</lastmod>
+    <lastmod>2018-09-03T04:51:33.156Z</lastmod>
     
   </url>
   
@@ -37,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/about/index.html</loc>
+    <loc>http://www.qupzhi.com/archives/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/archives/index.html</loc>
+    <loc>http://www.qupzhi.com/about/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     

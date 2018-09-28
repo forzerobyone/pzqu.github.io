@@ -1,3 +1,4 @@
+http://www.qupzhi.com/ansible-roles/
 http://www.qupzhi.com/ansible初探/
 http://www.qupzhi.com/配置像我一样的hexo博客/
 http://www.qupzhi.com/first-blog/
