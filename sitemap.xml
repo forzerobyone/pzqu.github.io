@@ -4,7 +4,7 @@
   <url>
     <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
     
-    <lastmod>2018-11-18T09:46:23.722Z</lastmod>
+    <lastmod>2018-11-18T11:24:51.978Z</lastmod>
     
   </url>
   
@@ -44,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404/index.html</loc>
-    
-    <lastmod>2018-09-02T07:07:13.307Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/tags/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
@@ -58,14 +51,21 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/archives/index.html</loc>
+    <loc>http://www.qupzhi.com/404/index.html</loc>
+    
+    <lastmod>2018-09-02T07:07:13.307Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/about/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/about/index.html</loc>
+    <loc>http://www.qupzhi.com/archives/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
