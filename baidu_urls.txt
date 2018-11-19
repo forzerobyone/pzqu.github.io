@@ -1,3 +1,4 @@
+http://www.qupzhi.com/rabbitmq-restart-save-data/
 http://www.qupzhi.com/rabbitmq-federation/
 http://www.qupzhi.com/git-start/
 http://www.qupzhi.com/ansible-roles/
