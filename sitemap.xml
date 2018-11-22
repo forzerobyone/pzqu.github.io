@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/git-start/</loc>
+    
+    <lastmod>2018-11-22T03:06:48.733Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
+    
+    <lastmod>2018-11-22T03:06:37.776Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
     
-    <lastmod>2018-11-21T12:33:34.572Z</lastmod>
+    <lastmod>2018-11-22T03:06:22.859Z</lastmod>
     
   </url>
   
@@ -12,20 +26,6 @@
     <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
     
     <lastmod>2018-11-21T12:33:23.946Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/git-start/</loc>
-    
-    <lastmod>2018-11-21T05:52:29.076Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
-    
-    <lastmod>2018-11-21T05:52:15.101Z</lastmod>
     
   </url>
   
@@ -58,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/categories/index.html</loc>
+    <loc>http://www.qupzhi.com/commonweal/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.308Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/commonweal/index.html</loc>
+    <loc>http://www.qupzhi.com/categories/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.308Z</lastmod>
     
