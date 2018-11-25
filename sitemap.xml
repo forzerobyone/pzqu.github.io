@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/git-start/</loc>
+    
+    <lastmod>2018-11-25T15:57:06.926Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
     
     <lastmod>2018-11-25T15:54:47.940Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
     
     <lastmod>2018-11-25T15:50:30.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/git-start/</loc>
-    
-    <lastmod>2018-11-25T15:29:58.966Z</lastmod>
     
   </url>
   
