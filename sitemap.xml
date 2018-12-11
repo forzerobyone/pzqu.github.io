@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/about/index.html</loc>
+    
+    <lastmod>2018-12-11T12:46:12.182Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
     
-    <lastmod>2018-12-11T12:13:57.169Z</lastmod>
+    <lastmod>2018-12-11T12:16:58.342Z</lastmod>
     
   </url>
   
@@ -79,13 +86,6 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404/index.html</loc>
-    
-    <lastmod>2018-09-02T07:07:13.307Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/tags/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/archives/index.html</loc>
+    <loc>http://www.qupzhi.com/404/index.html</loc>
     
-    <lastmod>2018-09-02T07:07:13.306Z</lastmod>
+    <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/about/index.html</loc>
+    <loc>http://www.qupzhi.com/archives/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.306Z</lastmod>
     
