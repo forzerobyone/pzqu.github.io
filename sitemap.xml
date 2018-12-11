@@ -2,51 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.qupzhi.com/about/index.html</loc>
+    <loc>http://www.qupzhi.com/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/</loc>
     
-    <lastmod>2018-12-11T12:46:12.182Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
-    
-    <lastmod>2018-12-11T12:16:58.342Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
-    
-    <lastmod>2018-12-11T12:13:19.443Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
-    
-    <lastmod>2018-12-11T11:48:03.013Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/first-blog/</loc>
-    
-    <lastmod>2018-12-11T11:47:32.948Z</lastmod>
+    <lastmod>2018-12-11T13:01:25.468Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
     
-    <lastmod>2018-12-11T11:46:16.500Z</lastmod>
+    <lastmod>2018-12-11T13:00:57.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/first-blog/</loc>
+    
+    <lastmod>2018-12-11T13:00:37.302Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.qupzhi.com/git-start/</loc>
     
-    <lastmod>2018-11-25T15:59:28.765Z</lastmod>
+    <lastmod>2018-12-11T13:00:27.632Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
+    
+    <lastmod>2018-12-11T13:00:19.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
+    
+    <lastmod>2018-12-11T13:00:09.881Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
+    
+    <lastmod>2018-12-11T13:00:00.780Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/about/index.html</loc>
+    
+    <lastmod>2018-12-11T12:46:12.182Z</lastmod>
     
   </url>
   
@@ -61,13 +68,6 @@
     <loc>http://www.qupzhi.com/ansible-roles/</loc>
     
     <lastmod>2018-11-19T02:28:41.913Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/%E9%85%8D%E7%BD%AE%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E7%9A%84hexo%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2018-11-19T02:28:36.582Z</lastmod>
     
   </url>
   
