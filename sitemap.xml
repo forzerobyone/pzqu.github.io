@@ -2,37 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.qupzhi.com/git-start/</loc>
-    
-    <lastmod>2018-11-25T15:57:06.926Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
     
-    <lastmod>2018-11-25T15:54:47.940Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
-    
-    <lastmod>2018-11-25T15:50:30.838Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
-    
-    <lastmod>2018-11-21T12:33:23.946Z</lastmod>
+    <lastmod>2018-12-11T11:48:03.013Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.qupzhi.com/first-blog/</loc>
     
-    <lastmod>2018-11-19T02:51:01.728Z</lastmod>
+    <lastmod>2018-12-11T11:47:32.948Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
+    
+    <lastmod>2018-12-11T11:47:25.602Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/rabbitmqadmin/</loc>
+    
+    <lastmod>2018-12-11T11:46:16.500Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
+    
+    <lastmod>2018-11-27T06:42:13.149Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/git-start/</loc>
+    
+    <lastmod>2018-11-25T15:59:28.765Z</lastmod>
     
   </url>
   
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404.html</loc>
+    <loc>http://www.qupzhi.com/sitemap/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/sitemap/index.html</loc>
+    <loc>http://www.qupzhi.com/404.html</loc>
     
     <lastmod>2018-09-02T07:07:13.305Z</lastmod>
     
