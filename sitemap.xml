@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
+    
+    <lastmod>2018-12-12T06:51:59.202Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/about/index.html</loc>
     
     <lastmod>2018-12-11T13:08:10.590Z</lastmod>
@@ -37,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/mysql-backup-xtrabackup/</loc>
-    
-    <lastmod>2018-12-11T13:00:19.241Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
     
     <lastmod>2018-12-11T13:00:09.881Z</lastmod>
@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/categories/index.html</loc>
-    
-    <lastmod>2018-09-02T07:07:13.308Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/commonweal/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.308Z</lastmod>
@@ -86,14 +79,21 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404/index.html</loc>
+    <loc>http://www.qupzhi.com/categories/index.html</loc>
+    
+    <lastmod>2018-09-02T07:07:13.308Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.qupzhi.com/tags/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/tags/index.html</loc>
+    <loc>http://www.qupzhi.com/404/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
