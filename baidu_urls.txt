@@ -1,8 +1,8 @@
+http://www.qupzhi.com/git-start/
 http://www.qupzhi.com/mysql-backup-xtrabackup/
 http://www.qupzhi.com/rabbitmqadmin/
 http://www.qupzhi.com/rabbitmq-restart-save-data/
 http://www.qupzhi.com/rabbitmq-federation/
-http://www.qupzhi.com/git-start/
 http://www.qupzhi.com/ansible-roles/
 http://www.qupzhi.com/ansible初探/
 http://www.qupzhi.com/配置像我一样的hexo博客/
