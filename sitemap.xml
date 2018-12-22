@@ -2,23 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.qupzhi.com/git-start3/</loc>
-    
-    <lastmod>2018-12-18T05:52:35.932Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.qupzhi.com/git-start/</loc>
     
-    <lastmod>2018-12-18T05:48:35.683Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/git-start2/</loc>
-    
-    <lastmod>2018-12-18T05:31:38.175Z</lastmod>
+    <lastmod>2018-12-22T08:13:02.782Z</lastmod>
     
   </url>
   
@@ -100,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404/index.html</loc>
+    <loc>http://www.qupzhi.com/tags/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/tags/index.html</loc>
+    <loc>http://www.qupzhi.com/404/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
@@ -121,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/404.html</loc>
+    <loc>http://www.qupzhi.com/sitemap/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.qupzhi.com/sitemap/index.html</loc>
+    <loc>http://www.qupzhi.com/404.html</loc>
     
     <lastmod>2018-09-02T07:07:13.305Z</lastmod>
     

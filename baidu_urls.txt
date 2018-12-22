@@ -1,5 +1,3 @@
-http://www.qupzhi.com/git-start2/
-http://www.qupzhi.com/git-start3/
 http://www.qupzhi.com/git-start/
 http://www.qupzhi.com/mysql-backup-xtrabackup/
 http://www.qupzhi.com/rabbitmqadmin/
