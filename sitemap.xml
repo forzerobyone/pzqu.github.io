@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.qupzhi.com/create_vpn/</loc>
+    
+    <lastmod>2018-12-27T13:27:42.236Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.qupzhi.com/git-start2/</loc>
     
     <lastmod>2018-12-23T13:29:24.684Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://www.qupzhi.com/rabbitmq-federation/</loc>
     
     <lastmod>2018-12-11T13:00:09.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.qupzhi.com/rabbitmq-restart-save-data/</loc>
-    
-    <lastmod>2018-12-11T13:00:00.780Z</lastmod>
     
   </url>
   
