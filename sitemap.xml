@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://qupzhi.com/git-merge-remote-url/</loc>
+    
+    <lastmod>2019-03-10T03:52:55.268Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qupzhi.com/rabbitmq-learn01/</loc>
     
     <lastmod>2019-03-04T11:14:50.320Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://qupzhi.com/how_to_subscribe_RSS/</loc>
     
     <lastmod>2019-01-21T11:11:08.932Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qupzhi.com/git-merge-remote-url/</loc>
-    
-    <lastmod>2019-01-21T06:26:00.662Z</lastmod>
     
   </url>
   
