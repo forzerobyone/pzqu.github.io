@@ -1,3 +1,5 @@
+https://qupzhi.com/how-to-use-cmake/
+https://qupzhi.com/linux-disk-monitor/
 https://qupzhi.com/rabbitmq-learn01/
 https://qupzhi.com/git-merge-remote-url/
 https://qupzhi.com/VPN/
