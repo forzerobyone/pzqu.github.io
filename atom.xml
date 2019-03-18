@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>pzqu 的自言自语</title>
+  <title>小熊同学 的自言自语</title>
   
   <subtitle>程序改变世界</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://qupzhi.com/</id>
   
   <author>
-    <name>pzqu</name>
+    <name>小熊同学</name>
     
   </author>
   
