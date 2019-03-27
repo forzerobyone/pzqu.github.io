@@ -1,4 +1,3 @@
-https://qupzhi.com/CLion_cplusplus/
 https://qupzhi.com/how-to-use-cmake/
 https://qupzhi.com/linux-disk-monitor/
 https://qupzhi.com/rabbitmq-learn01/
