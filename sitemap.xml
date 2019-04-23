@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://qupzhi.com/leetcode-20190420/</loc>
+    
+    <lastmod>2019-04-23T08:27:24.120Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qupzhi.com/redis-better/</loc>
+    
+    <lastmod>2019-04-23T08:27:12.297Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qupzhi.com/golang-filename-rule/</loc>
+    
+    <lastmod>2019-04-23T08:25:20.073Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qupzhi.com/how-to-use-cmake/</loc>
     
     <lastmod>2019-03-28T02:24:09.589Z</lastmod>
