@@ -1,4 +1,3 @@
-https://qupzhi.com/golang-filename-rule/
 https://qupzhi.com/redis-better/
 https://qupzhi.com/leetcode-20190420/
 https://qupzhi.com/CLion_cplusplus/

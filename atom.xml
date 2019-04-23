@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qupzhi.com/"/>
-  <updated>2019-04-23T08:25:20.073Z</updated>
+  <updated>2019-04-23T08:27:12.297Z</updated>
   <id>https://qupzhi.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>golang 文件名命名规则</title>
-    <link href="https://qupzhi.com/golang-filename-rule/"/>
-    <id>https://qupzhi.com/golang-filename-rule/</id>
-    <published>2019-04-23T12:20:00.000Z</published>
-    <updated>2019-04-23T08:25:20.073Z</updated>
-    
-    <content type="html"><![CDATA[<!-- build time:Tue Apr 23 2019 16:27:54 GMT+0800 (China Standard Time) --><p>Golang 文件名命名规则</p><h1 id="1、平台区分"><a href="#1、平台区分" class="headerlink" title="1、平台区分"></a>1、平台区分</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">文件名_平台。</span><br><span class="line"></span><br><span class="line">例： file_windows.go, file_unix.go</span><br><span class="line"></span><br><span class="line">可选为：windows, unix, posix, plan9, darwin, bsd, linux, freebsd, nacl, netbsd, openbsd, solaris, dragonfly, bsd, notbsd， android，stubs</span><br></pre></td></tr></table></figure><h1 id="2、测试单元"><a href="#2、测试单元" class="headerlink" title="2、测试单元"></a>2、测试单元</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">文件名_test.go或者 文件名_平台_test.go。</span><br><span class="line"></span><br><span class="line">例： path_test.go, path_windows_test.go</span><br></pre></td></tr></table></figure><p>学GO的人都知道GO内建了单元测试的框架，跑跑一般的单元测试还是非常嗨皮的，但是如果要做一些简单的集成测试就令人拙计了，因为go test默认就是跑最基本的单元测试。那么怎么只执行集成测试的代码呢？其实就可以通过构建约束来实施。比如我们在集成测试的GO文件中加上 // +build integration 然后运行命令 go test –tags=”integration”就可以只运行我们的集成测试代码了。</p><h1 id="3、CPU类型区分-汇编用的多"><a href="#3、CPU类型区分-汇编用的多" class="headerlink" title="3、CPU类型区分, 汇编用的多"></a>3、CPU类型区分, 汇编用的多</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">文件名_(平台:可选)_CPU类型.</span><br><span class="line"></span><br><span class="line">例：vdso_linux_amd64.go</span><br><span class="line"></span><br><span class="line">可选：amd64, none, 386, arm, arm64, mips64, s390,mips64x,ppc64x, nonppc64x, s390x, x86,amd64p32</span><br></pre></td></tr></table></figure><h1 id="跨平台构建可参考项目"><a href="#跨平台构建可参考项目" class="headerlink" title="跨平台构建可参考项目"></a>跨平台构建可参考项目</h1><p><a href="https://github.com/pzqu/process_create_time" target="_blank" rel="noopener">采集进程启动时间</a></p><h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><a href="https://studygolang.com/articles/8542" target="_blank" rel="noopener">Golang文件名命名规则</a></p><p><a href="https://golang.org/pkg/go/build/" target="_blank" rel="noopener">Package build</a></p><p><a href="https://www.cnblogs.com/concurrency/p/go.html" target="_blank" rel="noopener">Go build constraints</a></p><!-- rebuild by neat -->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;!-- build time:Tue Apr 23 2019 16:27:54 GMT+0800 (China Standard Time) --&gt;&lt;p&gt;Golang 文件名命名规则&lt;/p&gt;&lt;h1 id=&quot;1、平台区分&quot;&gt;&lt;a href=&quot;#1、平台区分&quot; class=&quot;hea
-      
-    
-    </summary>
-    
-      <category term="go" scheme="https://qupzhi.com/categories/go/"/>
-    
-    
-      <category term="go" scheme="https://qupzhi.com/tags/go/"/>
-    
-  </entry>
   
   <entry>
     <title>Redis运行优化</title>
@@ -512,6 +487,30 @@
       <category term="工具" scheme="https://qupzhi.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="rabbitmq工具" scheme="https://qupzhi.com/tags/rabbitmq%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>rabbitmq之Federation配置</title>
+    <link href="https://qupzhi.com/rabbitmq-federation/"/>
+    <id>https://qupzhi.com/rabbitmq-federation/</id>
+    <published>2018-11-18T07:26:31.000Z</published>
+    <updated>2018-12-11T13:00:09.881Z</updated>
+    
+    <content type="html"><![CDATA[<!-- build time:Thu Mar 28 2019 10:24:23 GMT+0800 (China Standard Time) --><p>摘要：当我们有多个rabbitmq集群的时候，如果想要单向的同步集群的消息，也就是说把新集群当作老集群的镜像集群，实时的同步老集群的消息，在老集群消息被消费的时候不会影响同步到新集群的消息。在外部看上去就像每次写入消息的时候，同时向新老两个集群写入一样,不论mq的跨版本，不论mq的用户。一般我们会将这种情况应用于存在两个不同的系统，但是老数据来源只能向一个队列写入数据，此时为了在新系统上也可以实时同步到老系统队列中的数据的时候。</p><a id="more"></a><ul><li><a href="#federation介绍">Federation介绍</a><ul><li><a href="#特点">特点</a><ul><li><a href="#松耦合性loose-coupling">松耦合性（Loose coupling）</a></li><li><a href="#wan-友好性wan-friendly">WAN 友好性（WAN-friendly）</a></li><li><a href="#扩展性scalability">扩展性（Scalability）</a></li></ul></li><li><a href="#federation能做什么">federation能做什么？</a></li><li><a href="#配置的种类">配置的种类</a></li><li><a href="#身份验证">身份验证</a></li></ul></li><li><a href="#操作步骤说明">操作步骤说明</a><ul><li><a href="#1-在集群的每一个node开启federation插件同步和被同步集群都需要">1. 在集群的每一个node开启federation插件(同步和被同步集群都需要)</a></li><li><a href="#2-登录到同步集群的管理界面httpxxx15672">2. 登录到同步集群的管理界面::http://x.x.x.:15672/#/</a></li><li><a href="#3-创建upstream">3. 创建upstream</a></li><li><a href="#4-创建policy">4. 创建policy</a></li><li><a href="#5-查看状态图">5. 查看状态图</a></li><li><a href="#6-查看连接">6. 查看连接</a></li></ul></li><li><a href="#高级">高级</a></li><li><a href="#参考">参考</a></li></ul><h1 id="Federation介绍"><a href="#Federation介绍" class="headerlink" title="Federation介绍"></a>Federation介绍</h1><blockquote><p>federation 插件的最终目标是，在不同 broker 之间进行消息传递而无需建立集群；该功能在很多场景下非常有用：</p></blockquote><p><strong>注意:当你在一个cluster中使用federation插件，所有在集群中 的nodes都需要安装federation插件</strong></p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h3 id="松耦合性（Loose-coupling）"><a href="#松耦合性（Loose-coupling）" class="headerlink" title="松耦合性（Loose coupling）"></a>松耦合性（Loose coupling）</h3><ul><li>federation 插件能够在分属不同管理域的 broker 或 cluster 之间传递消息：</li><li>他们可能设置了不同的 user 和 vhost ；</li><li>他们可能运行在不同版本的 RabbitMQ 和 Erlang 上；</li></ul><h3 id="WAN-友好性（WAN-friendly）"><a href="#WAN-友好性（WAN-friendly）" class="headerlink" title="WAN 友好性（WAN-friendly）"></a>WAN 友好性（WAN-friendly）</h3><ul><li>federation 插件基于 AMQP 0-9-1 协议在不同 broker 之间进行通信，并设计成能够容忍不稳定的网络连通情况；</li></ul><h3 id="扩展性（Scalability）"><a href="#扩展性（Scalability）" class="headerlink" title="扩展性（Scalability）"></a>扩展性（Scalability）</h3><ul><li>federation 不需要在 n 个 broker 之间建立 O(n^2) 个连接（尽管这是最简单的使用模式），这也就意味着 federation 在使用时更容易扩展</li></ul><h2 id="federation能做什么？"><a href="#federation能做什么？" class="headerlink" title="federation能做什么？"></a>federation能做什么？</h2><blockquote><p>federation 插件允许你将多个 exchange 或多个 queue 进行 federate ；federated exchange 或 federated queue 能够从一个或多个 upstream 接收到消息；</p></blockquote><p>也就是说，你的队列可以和其他集群的队列建立一种关系，他们之间可以相互的同步数据，可以是我同步给你，也可以是你同步给我，不过这种关系有两个角色一个是上游一个是下游，数据流向是上游流向下流。<br>这里有三个名词，federation 插件允许你将多个 exchange 或多个 queue 进行 federate：</p><ul><li>upstream： 上游，是指位于其他 broker 上的、远端 exchange 和 queue ；</li><li>federated exchange： 到exchange的关系，能够将发给 upstream 的消息路由到本地的某个 queue 中；</li><li>federated queue： 到queue的关系，则允许一个本地消费者接收到来自 upstream queue 的消息；</li></ul><h2 id="配置的种类"><a href="#配置的种类" class="headerlink" title="配置的种类"></a>配置的种类</h2><p>关于 federation upstream 的信息全都保存在 RabbitMQ 的数据库中，其中包括了 user 信息、permission 信息、queue 信息等等；<br>在 federation 中存在 3 种界别的配置：</p><ul><li>Upstreams - 每一个 upstream 用于定义如何与另外的 broker 建立连接；</li><li>Upstream sets - 每一个 upstream set 用于针对一系列使用 federation 功能 upstream 进行了分组；</li><li>Policies - 每一种 policy 会限定（过滤）出一组 exchange ，或者一组 queue ，或者同时针对两者进行限定；policy 最终将作用于一个单独的 upstream 上，或者一个 upstream set 上，并对其他对象发挥作用；</li></ul><p><em>实际上，在最简单的使用情况下，你可以忽略已经存在的upstream设置，因为有一个隐含的默认upstream叫做“all”，他会添加所有的upstream。</em></p><h2 id="身份验证"><a href="#身份验证" class="headerlink" title="身份验证"></a>身份验证</h2><p>我们讨论的是免身份验证的方式，如果有身份难的需求请参考官网：<a href="http://www.rabbitmq.com/authentication.html" target="_blank" rel="noopener">http://www.rabbitmq.com/authentication.html</a></p><h1 id="操作步骤说明"><a href="#操作步骤说明" class="headerlink" title="操作步骤说明"></a>操作步骤说明</h1><blockquote><p>parameter 和 policy 可以通过 3 种方式进行设置：<br>通过 rabbitmqctl 脚本；<br>通过 management 插件提供的 HTTP API ；<br>通过 rabbitmq_federation_management 插件提供的 Web UI（更通用的方式,我们也是通过页面来配置就可以了）；注意：基于 Web UI 的方式不能提供全部功能，尤其无法针对 upstream set 进行管理；</p></blockquote><h2 id="1-在集群的每一个node开启federation插件-同步和被同步集群都需要"><a href="#1-在集群的每一个node开启federation插件-同步和被同步集群都需要" class="headerlink" title="1. 在集群的每一个node开启federation插件(同步和被同步集群都需要)"></a>1. 在集群的每一个node开启federation插件(同步和被同步集群都需要)</h2><p>参考命令：<br></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rabbitmq-plugins enable rabbitmq_federation</span><br><span class="line">rabbitmq-plugins enable rabbitmq_federation_management</span><br></pre></td></tr></table></figure><p></p><h2 id="2-登录到同步集群的管理界面-http-x-x-x-15672"><a href="#2-登录到同步集群的管理界面-http-x-x-x-15672" class="headerlink" title="2. 登录到同步集群的管理界面::http://x.x.x.:15672/#/"></a>2. 登录到同步集群的管理界面::<a href="http://x.x.x.:15672/#/" target="_blank" rel="noopener">http://x.x.x.:15672/#/</a></h2><h2 id="3-创建upstream"><a href="#3-创建upstream" class="headerlink" title="3. 创建upstream"></a>3. 创建upstream</h2><p>tips:在下游，也就是新队列（被同步队列）上操作</p><p><img src="/rabbitmq-federation/upstream.png" alt="upstrem"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UI操作:Admin-&gt;Federation Upstreams-&gt;Add a new upstream Name:随意填写 URI:填被同步集群(例如:amqp://user1:xxx@x.x.x.x,xxx为连接密码) Expires:默认填写3600000 单位ms</span><br><span class="line">其余字段可不用填写</span><br></pre></td></tr></table></figure><p><strong>Expires</strong>：是代表缓存时间，如果说网络连通性不好的时候，消息会在上游的队列中缓存的时间，超时丢弃，设置为空则表示，永远缓存不会丢弃数据（但是如果长时候不恢复内存会占用越来越大，建议设置上）<br><strong>Acknowledgement Mode</strong>: 代表消息确认方式，用来防止消息在传输过程中丢失，有三个值，on-confirm、on-publish、no-ack，对传输速度的影响是从慢速到快速，对安全性是不会丢失到可能会丢失。通常使用<code>on-publish</code>，不然<code>on-confirm</code>太慢了。</p><h2 id="4-创建policy"><a href="#4-创建policy" class="headerlink" title="4. 创建policy"></a>4. 创建policy</h2><p>tips:在下游，也就是新队列（被同步队列）上操作<br><img src="/rabbitmq-federation/policy.png" alt="policy"><br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UI操作:Admin-&gt;Policies-&gt;Add / update a policy</span><br><span class="line">Name:随意填写(sync_data)</span><br><span class="line">Pattern:匹配表达式(例如:^(?!amq.).* 剔除系统队列后的所有队列)</span><br><span class="line">Apply to: 默认选择Exchange and queues Definition:federation-upstream-set = all (选定federation规则)</span><br></pre></td></tr></table></figure><p></p><h2 id="5-查看状态图"><a href="#5-查看状态图" class="headerlink" title="5. 查看状态图"></a>5. 查看状态图</h2><p>现在，所有内置的 exchange 都应该建立了 federation ，因为他们都能匹配上面的 policy，可以通过页面查看状态<br></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UI操作:Admin &gt; Federation Status &gt; Running Links 查看针对每个 exchange 的 federation 连接。</span><br><span class="line">配置成功可以看到匹配的Exchange / Queue， state:running</span><br></pre></td></tr></table></figure><p></p><p>也可以通过下面的命令查看状态图：<br></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl eval 'rabbit_federation_status:status().'</span><br></pre></td></tr></table></figure><p></p><p>也可以通过 management 插件中的 exchange 列表，或者下面的命令输出，确认上述 policy 已经作用到了 exchange 上；<br></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rabbitmqctl list_exchanges name policy | grep federate-me</span><br></pre></td></tr></table></figure><p></p><p>通常情况下，针对每个 upstream 都会有一条 federation 连接，该 federation 连接对应到一个 exchange 上；例如 3 个 exchange 与 2 个 upstream 分别建立 federation 的情况下，会有 6 条连接。</p><h2 id="6-查看连接"><a href="#6-查看连接" class="headerlink" title="6. 查看连接"></a>6. 查看连接</h2><pre><code>登录到被同步集群（上游）的管理界面::http://x.x.x.:15672/#/ 前往 Connections选项 配置成功可以看到来自同步集群的连接</code></pre><h1 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h1><p>更复杂的配置：<a href="https://www.rabbitmq.com/federation-reference.html" target="_blank" rel="noopener">https://www.rabbitmq.com/federation-reference.html</a></p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.rabbitmq.com/federation.html" target="_blank" rel="noopener">官网</a></p><!-- rebuild by neat -->]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Thu Mar 28 2019 10:24:23 GMT+0800 (China Standard Time) --&gt;&lt;p&gt;摘要：当我们有多个rabbitmq集群的时候，如果想要单向的同步集群的消息，也就是说把新集群当作老集群的镜像集群，实时的同步老集群的消息，在老集群消息被消费的时候不会影响同步到新集群的消息。在外部看上去就像每次写入消息的时候，同时向新老两个集群写入一样,不论mq的跨版本，不论mq的用户。一般我们会将这种情况应用于存在两个不同的系统，但是老数据来源只能向一个队列写入数据，此时为了在新系统上也可以实时同步到老系统队列中的数据的时候。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="rabbitmq" scheme="https://qupzhi.com/categories/rabbitmq/"/>
+    
+    
+      <category term="rabbitmq集群" scheme="https://qupzhi.com/tags/rabbitmq%E9%9B%86%E7%BE%A4/"/>
+    
+      <category term="rabbitmq教程" scheme="https://qupzhi.com/tags/rabbitmq%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
