@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://qupzhi.com/rpmbuild-01/</loc>
+    
+    <lastmod>2019-05-01T14:54:12.315Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qupzhi.com/linux-boot-add/</loc>
+    
+    <lastmod>2019-05-01T14:53:51.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qupzhi.com/process-start-time-linux/</loc>
+    
+    <lastmod>2019-05-01T14:53:31.310Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qupzhi.com/leetcode-20190420/</loc>
     
     <lastmod>2019-04-23T08:27:24.120Z</lastmod>
@@ -177,13 +198,6 @@
   </url>
   
   <url>
-    <loc>https://qupzhi.com/commonweal/index.html</loc>
-    
-    <lastmod>2018-09-02T07:07:13.308Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qupzhi.com/categories/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.308Z</lastmod>
@@ -191,14 +205,21 @@
   </url>
   
   <url>
-    <loc>https://qupzhi.com/tags/index.html</loc>
+    <loc>https://qupzhi.com/commonweal/index.html</loc>
+    
+    <lastmod>2018-09-02T07:07:13.308Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qupzhi.com/404/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qupzhi.com/404/index.html</loc>
+    <loc>https://qupzhi.com/tags/index.html</loc>
     
     <lastmod>2018-09-02T07:07:13.307Z</lastmod>
     

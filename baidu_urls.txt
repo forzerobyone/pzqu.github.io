@@ -1,3 +1,6 @@
+https://qupzhi.com/linux-boot-add/
+https://qupzhi.com/process-start-time-linux/
+https://qupzhi.com/rpmbuild-01/
 https://qupzhi.com/redis-better/
 https://qupzhi.com/leetcode-20190420/
 https://qupzhi.com/CLion_cplusplus/
