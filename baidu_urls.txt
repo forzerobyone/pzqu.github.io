@@ -1,4 +1,3 @@
-https://qupzhi.com/what-is-cloud-compute/
 https://qupzhi.com/linux-boot-add/
 https://qupzhi.com/process-start-time-linux/
 https://qupzhi.com/rpmbuild-01/
